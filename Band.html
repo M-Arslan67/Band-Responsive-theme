@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    .main1 {
+        width: 100%;
+        /* height: 110vh; */
+        background-image: url(./chicago.jpg);
+        background-size:100% 100%;
+        border: 2px solid transparent;
+        background-position-y:40px ;
+
+
+        
+
+    }
+
+    .navbar {
+        width: 100%;
+        height: 8vh;
+        background-color: black;
+        padding: 1px;
+    }
+
+    .nav {
+        width: 100%;
+        height: 7vh;
+        /* border: 1px solid white; */
+        /* margin-top: 10px; */
+        position: relative;
+    }
+
+    .ul1 {
+        list-style: none;
+    }
+
+    .li1 {
+        display: inline-block;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .li1 a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    .li1:hover {
+        /* background-color: aqua; */
+        cursor: pointer;
+    }
+
+    .btn1 {
+        width: 5%;
+        height: 40px;
+        font-size: 30px;
+        color: white;
+        background-color: black;
+        position: absolute;
+        top: 5px;
+        right: 2px;
+
+    }
+
+    .btn1:hover {
+        background-color: orangered;
+        cursor: pointer;
+    }
+
+    .h-p1 {
+        width: 200px;
+
+        /* border: 3px solid pink; */
+        margin: 20% auto;
+
+
+    }
+
+    .head1 {
+        font-size: 150%;
+        color: white;
+        text-align: center;
+    }
+
+    .para1 {
+        font-size: 100%;
+        color: white;
+        text-align: center;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+
+    .main2 {
+        width: 100%;
+        height: 110vh;
+        padding-bottom: 50px;
+        /* border: 1px solid green; */
+    }
+
+    .the-band2 {
+        width: 730px;
+        height: max-content;
+        /* border: 1px solid brown; */
+        margin: auto;
+        margin-top: 5%;
+
+    }
+
+    .h-band2 {
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .p-band2 {
+        text-align: center;
+        color: rgb(120, 120, 120);
+        line-height: 50px;
+
+    }
+
+    .para-band2 {
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .name-div2 {
+        width: 750px;
+        height: 41vh;
+        /* border: 1px solid black; */
+        margin: auto;
+        margin-top: 5%;
+    }
+
+    .img-div2 {
+        width: 230px;
+        height: 40vh;
+        /* border: 1px solid red; */
+        margin-left: 12px;
+        display: inline-block;
+    }
+
+    .p-img2 {
+        font-size: 15px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .band-img2 {
+        width:228px ;
+        height: 35vh;
+        margin-top: 1vh;
+        border-radius: 5px;
+    }
+
+
+
+    #menu-icon {
+        position: absolute;
+        right: 0%;
+    }
+
+    .main3 {
+        width: 100%;
+        height: 120vh;
+        background-color: black;
+        padding: 1px;
+        padding-bottom: 50px;
+    }
+
+    .tour-div3 {
+        width: max-content;
+        height: 12vh;
+        /* border: 1px solid white; */
+        margin: auto;
+        margin-top: 5%;
+    }
+
+    .h3 {
+        color: white;
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .p3 {
+        color: white;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .soldout-div3 {
+        width: 800px;
+        height: 80vh;
+        /* border: 1px solid green; */
+        /* margin-top: 50px; */
+        margin: auto;
+    }
+
+    .sold-div3 {
+        width: 97%;
+        height: 20vh;
+        background-color: white;
+        margin-top: 20px;
+        padding: 1px;
+        /* border: 2px solid red; */
+        margin-left: 10px;
+
+
+    }
+
+    .p-sold3 {
+        font-size: 15px;
+        margin-top: 1%;
+        margin-left: 2%;
+    }
+
+    .sold3 {
+        width: 80px;
+        height: 3vh;
+        background-color: red;
+        margin-left: 100px;
+        margin-top: -20px;
+        color: white;
+        text-align: center;
+    }
+
+    .line-div3 {
+        width: 100%;
+        /* height: 1px; */
+        border: .5px solid rgb(221, 221, 221);
+        margin-top: 1%;
+
+    }
+
+    .black-3 {
+        width: 25px;
+        height: 25px;
+        background: black;
+        border-radius: 50%;
+        color: white;
+        text-align: center;
+        margin-left: 90%;
+        margin-top: -20px;
+    }
+    .newyork-div3{
+        width: 250px;
+        height: 52vh;
+        /* border: 1px solid blue; */
+        margin-top: 20px;
+        background-color: white;
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .ny-img3{
+        width: 248px;
+        height:25vh ;
+
+    }
+    .h-img3{
+        font-size: 15px;
+        margin-left: 10px;
+        margin-top: 10px;
+
+
+    }
+    .p-img3{
+        margin-left: 10px;
+        margin-top: 10px;
+        color: rgb(120,120,120);
+    }
+    .p2-img3{
+        margin-left: 10px;
+        margin-top: 10px;
+
+    }
+    .ticket-div3{
+        width: 120px;
+        height: 40px;
+        margin-top: 10px;
+        margin-left: 10px;
+        border: none;
+        background-color: black;
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+        
+
+    }
+    .ticket-div3:hover{
+        margin-top: 10px;
+        background-color:darkgray;
+        color: black;
+        cursor: pointer;
+
+    }
+    .main4{
+        width: 100%;
+        height: 70vh;
+        padding: 50px 0px;
+        /* border: 1px solid red; */
+    
+    }
+    .contact-div{
+        width: 800px;
+        height: 45vh;
+        /* border: 1px solid black; */
+        /* margin-top: 50px; */
+        margin: auto;
+    
+    }
+    .p-contact4{
+        font-size: 32px;
+        text-align: center;
+    }
+    .p2-contact4{
+        text-align: center;
+
+
+    }
+    .contact-div2{
+        width: 220px;
+        height: 150px;
+        /* border: 1px solid green; */
+        margin-top: 50px;
+    }
+    .contact-div41{
+        width: 215px;
+        height: 30px;
+        /* border: 1px solid red; */
+    }
+    .p-41{
+        font-size: 18px;
+        font-weight: 400;
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .contact-div3{
+        width: 400px;
+        height:150px;
+        /* border: 1px solid blue; */
+        margin-top: -150px;
+        margin-left: 400px;
+        
+
+    }
+    .input31{
+        width: 190px;
+        height: 40px;
+        border-color: rgb(204,204,204);
+        padding:0px 10px ;
+        
+    }
+    .input32{
+        width: 385px;
+        margin-top: 10px;
+        height: 40px;
+        border-color: rgb(204,204,204);
+        padding: 0px 10px;
+
+    }
+    .btn3{
+        width: 70px;
+        height: 40px;
+        color: white;
+        background-color: black;
+        margin-left: 295px;
+        margin-top: 10px;
+    }
+    .btn3:hover{
+        background-color: darkgray;
+        color: black;
+    }
+    .main5{
+        width: 100%;
+        /* height: 110vh; */
+    }
+     .map-img{
+        width: 100%;
+        height: auto;
+        
+     }
+     .main6{
+        width: 100%;
+        background-color: rgb(246,246,246);
+        padding: 1px;
+     }
+     .icon-div{
+        width: 150px;
+        height: 100px;
+        /* border: 1px solid black; */
+        margin: 100px auto;
+     }
+     #fb-icon6{
+        font-size: 22px;
+        color: rgb(101,101,101);
+     }
+     .para-icon6{
+        color: rgb(101,101,101);
+        margin-top: 10px;
+        text-align: center;
+
+     }
+
+
+
+    /*.......................Media Querry......................  */
+    @media screen and (max-width:900px) {
+        .the-band2{
+        width: 95%;
+       }
+       .name-div2{
+        width: 85%;
+        height: max-content;
+
+       }
+       .img-div2{
+        width: 30%;
+        height: max-content;
+       }
+       .band-img2{
+        width: 100%;
+        height: max-content;
+       }
+        
+        
+        .soldout-div3 {
+            width: 90%;
+        }
+
+        .sold-div3 {
+            height: max-content;
+            margin-left: 10px;
+        }
+        .newyork-div3{
+            width: 31.5%;
+            margin-left:4px;
+            height: 370px;
+        }
+        .ny-img3{
+            width: 100%;
+            height: max-content;
+        }
+        .contact-div{
+            width:100%;
+        }
+        .contact-div2{
+            /* width: 30%; */
+            margin-left: 2%;
+            
+        }
+        .contact-div41{
+            width: 100%;
+        }
+        .contact-div3{
+            width: 49%;
+            /* width: max-content; */
+            margin-left: 50%;
+    
+            
+        }
+        .input31{
+            width: 49%;
+            
+            
+    
+       }
+       .input32{
+        width: 99%;
+        
+       }
+       .btn3{
+        width: 20%;
+        margin-left:79% ;
+       }
+
+    }
+    @media screen and (max-width:800px){
+       .main2{
+        height: max-content;
+       }
+
+        .contact-div2{
+        width: max-content;
+    }
+
+    
+    .main3{
+        height: max-content;
+    }
+        .soldout-div3{
+            width: 99%;
+            height: max-content;
+        }
+        .newyork-div3{
+            width: 99%;
+            display: block;
+            height: max-content;
+            padding-bottom: 30px;
+
+    }
+    .main4{
+        height: max-content;
+    }
+    .contact-div{
+        height: max-content;
+    }
+
+}
+    
+    
+    
+    @media screen and (max-width:700px) {
+
+
+        .btn1 {
+            display: none;
+        }
+
+        .nav {
+            width: 100%;
+            /* background-color: greenyellow; */
+            padding: 1px;
+
+        }
+
+        .ul1 {
+            background-color: black;
+            margin-top: 30px;
+            padding-bottom: 20px;
+            display: none;
+
+
+        }
+
+        .li1 {
+            display: block;
+        }
+
+        .nav i {
+            /* display: block; */
+            font-size: 100%;
+            right: 10%;
+            color: white;
+
+        }
+
+        .nav i:hover~ul {
+            display: block;
+        }
+
+        .main2 {
+            /* border: 2px solid red; */
+            height: max-content;
+        }
+
+        .img-div2 {
+            width: 90%;
+            height: fit-content;
+            /* border: 1px solid blue; */
+            margin-left: 5%;
+            margin-top: 2vh;
+        }
+
+        .band-img2 {
+            width: 100%;
+            height: max-content;
+            /* margin-top: 5vh; */
+            border-radius: 5%;
+        }
+
+        .contact-div{
+            width:100%;
+            height: auto;
+            
+        }
+        .contact-div2{
+            width: 100%;
+            /* border: 2px solid purple; */
+            margin-left: 0%;
+            height: 100px;
+        }
+        .contact-div3{
+        width: 100%;
+        margin-top: 0%;
+        margin-left: 0%;
+        height: auto;
+        }
+        .input31{
+            width: 100%;
+        }
+        .input32{
+            width: 100%;
+        }
+    .main4{
+        height: max-content;
+    }
+    .main6{
+        height: max-content;
+    }
+
+    }
+
+
+   
+
+    
+</style>
+
+<body>
+    <div class="main1">
+        <div class="navbar">
+            <div class="nav">
+                <i id="menu-icon" class="fa-solid fa-bars"></i>
+                <ul class="ul1">
+                    <li class="li1"><a href="">HOME</a></li>
+                    <li class="li1"><a href="">BAND</a></li>
+                    <li class="li1"><a href="">TOUR</a></li>
+                    <li class="li1"><a href="">CONTACT</a></li>
+                    <li class="li1"><a href="">MORE</a></li>
+
+                </ul>
+                <button class="btn1"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+        <div class="h-p1">
+            <h1 class="head1">New York</h1>
+            <p class="para1">The atmosphere in New York is lorem ipsum. </p>
+        </div>
+    </div>
+    <div class="main2">
+        <div class="the-band2">
+            <h1 class="h-band2">The Band</h1>
+            <p class="p-band2">We love music</p>
+            <p class="para-band2">We have created a fictional band website.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui
+                officia deserunt mollit anim id est laborum consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+
+            </p>
+        </div>
+        <div class="name-div2">
+            <div class="img-div2">
+                <p class="p-img2">Name</p>
+                <img class="band-img2" src="./bandmember.jpg" alt="">
+            </div>
+            <div class="img-div2">
+                <p class="p-img2">Name</p>
+                <img class="band-img2" src="./bandmember.jpg" alt="">
+            </div>
+            <div class="img-div2">
+                <p class="p-img2">Name</p>
+                <img class="band-img2" src="./bandmember.jpg" alt="">
+            </div>
+        </div>
+
+
+    </div>
+    <div class="main3">
+        <div class="tour-div3">
+            <h1 class="h3">Tour Dates</h1>
+            <p class="p3">Remember to book your tickets!</p>
+        </div>
+        <div class="soldout-div3">
+            <div class="sold-div3">
+                <p class="p-sold3">September</p>
+                <div class="sold3">Sold out</div>
+                <div class="line-div3"></div>
+                <p class="p-sold3">October</p>
+                <div class="sold3">Sold out</div>
+                <div class="line-div3"></div>
+                <p class="p-sold3">November</p>
+                <div class="black-3">3</div>
+            </div>
+            <div class="newyork-div3">
+                <img class="ny-img3" src="./newyork.jpg" alt="">
+                <h1 class="h-img3">New York</h1>
+                <p class="p-img3">Fri 27 Nov 2016</p>
+                <p class="p2-img3">Praesent tincidunt sed tellus ut
+                     rutrum sed vitae justo.</p>
+                    <button class="ticket-div3">Buy Tickets</button>
+            </div>
+
+            <div class="newyork-div3">
+                <img class="ny-img3" src="./paris.jpg" alt="">
+                <h1 class="h-img3">Paris</h1>
+                <p class="p-img3">Sat 28 Nov 2016</p>
+                <p class="p2-img3">Praesent tincidunt sed tellus ut
+                     rutrum sed vitae justo.</p>
+                    <button class="ticket-div3">Buy Tickets</button>
+            </div>
+
+            <div class="newyork-div3">
+                <img class="ny-img3" src="./sanfran.jpg" alt="">
+                <h1 class="h-img3">San Francisco</h1>
+                <p class="p-img3">Sat 29 Nov 2016</p>
+                <p class="p2-img3">Praesent tincidunt sed tellus ut
+                     rutrum sed vitae justo.</p>
+                    <button class="ticket-div3">Buy Tickets</button>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+    <div class="main4">
+        <div class="contact-div">
+            <p class="p-contact4">Contact</p>
+            <p class="p2-contact4">Fan? Drop a note!</p>
+            <div class="contact-div2">
+                <div class="contact-div41">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="p-41">Chicago, US</p>
+                </div>
+
+                <div class="contact-div41">
+                    <i class="fa-solid fa-phone"></i>
+                    <p class="p-41">Phone: +00 151515</p>
+                </div>
+
+                <div class="contact-div41">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p class="p-41">Email: mail@mail.com</p>
+                </div>
+            </div>
+
+            <div class="contact-div3">
+                <input class="input31" type="text" placeholder="Name">
+                <input class="input31" type="text" placeholder="Email">
+                <input class="input32" type="text" placeholder="Message">
+                 <button class="btn3">SEND</button> 
+            </div>
+        </div>
+    </div>
+    <div class="main5">
+        <img class="map-img" src="./map.jpg" alt="">
+    </div>
+    <div class="main6">
+        <div class="icon-div">
+            <i id="fb-icon6" class="fa-brands fa-facebook"></i>
+            <i id="fb-icon6" class="fa-brands fa-square-instagram"></i>
+            <i id="fb-icon6" class="fa-brands fa-square-snapchat"></i>
+            <i id="fb-icon6" class="fa-brands fa-square-twitter"></i>
+            <i id="fb-icon6" class="fa-brands fa-pinterest"></i>
+            <i id="fb-icon6" class="fa-brands fa-linkedin"></i>
+            <p class="para-icon6">Powered by w3.css</p>
+        </div>
+    </div>
+</body>
+
+</html>
